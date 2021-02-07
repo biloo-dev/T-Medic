@@ -14,8 +14,7 @@
             <template #actions>
               <v-icon class="mr-1" small>
                 mdi-clock-outline
-              </v-icon>
-
+              </v-icon> 
               <span class="text-caption grey--text font-weight-light" v-text="chart.time" />
             </template>
           </material-chart-card>

@@ -5,30 +5,31 @@ const state = {
   drawerImage: true,
   mini: false,
   items: [
-   {
-        title: 'dashboard',
-        icon: 'mdi-desktop-mac-dashboard',
-        to: 'Dashboard',
-        url: '/Dashboard'
-      },
-      {
-        title: 'users',
-        icon: 'mdi-account',
-        to: 'Users',
-        url: '/Users'
-      },
-      {
-        title: 'product',
-        icon: 'mdi-package-variant',
-        to: 'Products',
-        url: '/Products'
-      },
-      {
-        title: 'categoriers',
-        icon: 'mdi-shape-outline',
-        to: 'Categoriers',
-        url: '/Categoriers'
-      },
+    {
+      title: 'Dashboard',
+      icon: 'mdi-desktop-mac-dashboard',
+      to: '/', 
+    }, 
+    {
+      title: 'Users',
+      icon: 'mdi-account',
+      to: '/Users', 
+    },
+    {
+      title: 'Login',
+      icon: 'mdi-login',
+      to: '/login', 
+    },
+    {
+      title: 'Product',
+      icon: 'mdi-package-variant',
+      to: '/Products', 
+    },
+    {
+      title: 'categoriers',
+      icon: 'mdi-shape-outline',
+      to: '/Categoriers', 
+    },
   ],
 }
 
@@ -37,7 +38,7 @@ const mutations = make.mutations(state)
 const actions = {
   ...make.actions(state),
   init: async ({ dispatch }) => {
-    //
+    // 
   },
 }
 

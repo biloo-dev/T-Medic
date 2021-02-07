@@ -42,6 +42,7 @@
     name: 'DefaultBar',
 
     components: {
+
       DefaultAccount: () => import(
         /* webpackChunkName: "default-account" */
         './widgets/Account'
@@ -69,6 +70,9 @@
         'drawer',
         'mini',
       ]),
+      ...sync('login', [
+        'user', 
+      ]), 
       name: get('route/name'),
     },
   }

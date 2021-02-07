@@ -23,7 +23,7 @@ const state = {
     'https://demos.creative-tim.com/material-dashboard-pro/assets/img/sidebar-4.jpg',
   ],
   notifications: [],
-  rtl: false,
+  rtl: true,
 }
 
 const mutations = make.mutations(state)

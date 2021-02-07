@@ -22,6 +22,7 @@ store.subscribe(mutation => {
 })
 
 store.dispatch('app/init')
+store.dispatch('login/refreshData')
 
 export default store
 

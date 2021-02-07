@@ -1,6 +1,9 @@
 {
   "users": "List des Utilisateur",
-  "product": "List des produit",
+  "product": "List des produits",
+  "categorie": "List des categories",
+  "Newproduct": "Nouveau produit",
+  "Newcategorie": "Nouveau categorie",
   "NewUser": "Nouveau Utilisateur",
   "EditUser": "Modifer Utilisateur",
   "dashboard": "Tableau de bord",

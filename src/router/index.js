@@ -5,7 +5,7 @@ import { trailingSlash } from '@/util/helpers'
 import { layout, route, } from '@/util/routes'
 
 Vue.use(Router)
-console.log('route() :>> ', route('Users', null, '/Users'));
+ 
 const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -21,18 +21,19 @@ const router = new Router({
 
       // Pages
       route('Users', null, '/Users'),
-
-      // Components
-      route('Products', null, 'components/notifications'),
-      route('Categoriers', null, 'components/icons'),
-      route('Typography', null, 'components/typography'),
-
+      
+      // Dashboard
+      route('Products', null, '/Products'),
+      // route('icons', null, '/icons'),
+      route('Categoriers', null, '/Categoriers'),
+      
       // Tables
-      route('Regular Tables', null, 'tables/regular'),
-
+      // route('Regular Tables', null, 'tables/regular'),
+      
       // Maps
-      route('Google Maps', null, 'maps/google'),
+      // route('Google Maps', null, 'maps/google'),
     ]),
+    route('login', null, '/login'),
   ],
 })
 

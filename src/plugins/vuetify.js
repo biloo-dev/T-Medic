@@ -21,7 +21,9 @@ export default new Vuetify({
   icons: {
     values: { expand: 'mdi-menu-down' },
   },
+  rtl:false,
   theme: {
+    dark:true,
     themes: {
       dark: theme,
       light: theme,

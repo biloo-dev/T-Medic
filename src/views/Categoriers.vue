@@ -1,10 +1,10 @@
 <style>
-#user-profile-view .v-dialog {
+#categorie-profile-view .v-dialog {
   overflow: visible !important;
 }
 </style>
 <template>
-<v-container id="user-profile-view" fluid tag="section">
+<v-container id="categorie-profile-view" fluid tag="section">
   <v-row justify="center">
     <v-col cols="12">
       <template>
@@ -14,12 +14,12 @@
               <template #title> 
               <div class="pa-4 white--text">
                 <div class="text-h2 font-weight-light text-center">
-                  <strong class="mr-1 font-weight-black">{{ $t('users') }} </strong> 
+                  <strong class="mr-1 font-weight-black">{{ $t('categorie') }} </strong> 
                   <v-btn color="primary" class="float-right mb-2" dark @click="dialog=true">
-                    {{ $t('NewUser') }} <v-icon>mdi-plus</v-icon>
-                  </v-btn>    
+                    {{ $t('Newcategorie') }} <v-icon>mdi-plus</v-icon>
+                  </v-btn>   
                 </div>
-              </div> 
+              </div>
             </template>
             </material-card> 
           </template>
@@ -46,7 +46,7 @@
       <template #heading>
         <div class="pa-4 white--text">
           <div class="text-h2 font-weight-light text-center">
-            Add New — <strong class="">User</strong>
+            Add New — <strong class="">categorie</strong>
           </div>
         </div>
 
@@ -64,26 +64,26 @@
             </v-col>
 
             <v-col cols="12" md="6">
-              <v-text-field outlined v-model="editUser.username" hide-details="auto" dense label="User Name" />
+              <v-text-field outlined v-model="editcategorie.categoriename" hide-details="auto" dense label="categorie Name" />
             </v-col>
 
             <v-col cols="12" md="6">
-              <v-text-field outlined v-model="editUser.email" hide-details="auto" dense label="Email Address" />
+              <v-text-field outlined v-model="editcategorie.email" hide-details="auto" dense label="Email Address" />
             </v-col>
 
             <v-col cols="12" md="6">
-              <v-text-field outlined v-model="editUser.firstName" hide-details="auto" dense label="First Name" />
+              <v-text-field outlined v-model="editcategorie.firstName" hide-details="auto" dense label="First Name" />
             </v-col>
 
             <v-col cols="12" md="6">
-              <v-text-field outlined v-model="editUser.lastName" hide-details="auto" dense label="Last Name" />
+              <v-text-field outlined v-model="editcategorie.lastName" hide-details="auto" dense label="Last Name" />
             </v-col>
             <v-col cols="12" md="6">
-              <v-text-field outlined v-model="editUser.password" hide-details="auto" dense label="Password" />
+              <v-text-field outlined v-model="editcategorie.password" hide-details="auto" dense label="Password" />
             </v-col>
 
             <v-col cols="12" md="6">
-              <v-text-field outlined v-model="editUser.confirmPassword" hide-details="auto" dense label="Confirm Password" />
+              <v-text-field outlined v-model="editcategorie.confirmPassword" hide-details="auto" dense label="Confirm Password" />
             </v-col>
 
             <v-col cols="12" class="text-right">
@@ -121,9 +121,9 @@ export default {
         value: 'id',
       },
       {
-        text: 'username',
+        text: 'categoriename',
         align: 'start',
-        value: 'username'
+        value: 'categoriename'
       },
       {
         text: 'firstName',
@@ -147,16 +147,16 @@ export default {
     ],
     desserts: [],
     editedIndex: -1,
-    editUser: {
-      username: '',
+    editcategorie: {
+      categoriename: '',
       firstName: '',
       lastName: '',
       email: '',
       password: '',
       confirmPassword: '',
     },
-    defaultUser: {
-      username: '',
+    defaultcategorie: {
+      categoriename: '',
       firstName: '',
       lastName: '',
       email: '',
@@ -167,7 +167,7 @@ export default {
 
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? this.$t('NewUser') : this.$t('EditUser')
+      return this.editedIndex === -1 ? this.$t('Newcategorie') : this.$t('Editcategorie')
     },
   },
 
@@ -188,70 +188,70 @@ export default {
     initialize() {
       this.desserts = [{
           id: 159,
-          username: 'Frozen Yogurt',
+          categoriename: 'Frozen Yogurt',
           firstName: 6.0,
           lastName: 24,
           email: 4.0,
         },
         {
           id: 237,
-          username: 'Ice cream sandwich',
+          categoriename: 'Ice cream sandwich',
           firstName: 9.0,
           lastName: 37,
           email: 4.3,
         },
         {
           id: 262,
-          username: 'Eclair',
+          categoriename: 'Eclair',
           firstName: 16.0,
           lastName: 23,
           email: 6.0,
         },
         {
           id: 305,
-          username: 'Cupcake',
+          categoriename: 'Cupcake',
           firstName: 3.7,
           lastName: 67,
           email: 4.3,
         },
         {
           id: 356,
-          username: 'Gingerbread',
+          categoriename: 'Gingerbread',
           firstName: 16.0,
           lastName: 49,
           email: 3.9,
         },
         {
           id: 375,
-          username: 'Jelly bean',
+          categoriename: 'Jelly bean',
           firstName: 0.0,
           lastName: 94,
           email: 0.0,
         },
         {
           id: 392,
-          username: 'Lollipop',
+          categoriename: 'Lollipop',
           firstName: 0.2,
           lastName: 98,
           email: 0,
         },
         {
           id: 408,
-          username: 'Honeycomb',
+          categoriename: 'Honeycomb',
           firstName: 3.2,
           lastName: 87,
           email: 6.5,
         },
         {
           id: 452,
-          username: 'Donut',
+          categoriename: 'Donut',
           firstName: 25.0,
           lastName: 51,
           email: 4.9,
         },
         {
           id: 518,
-          username: 'KitKat',
+          categoriename: 'KitKat',
           firstName: 26.0,
           lastName: 65,
           email: 7,
@@ -264,13 +264,13 @@ export default {
     },
     editItem(item) {
       this.editedIndex = this.desserts.indexOf(item)
-      this.editUser = Object.assign({}, item)
+      this.editcategorie = Object.assign({}, item)
       this.dialog = true
     },
 
     deleteItem(item) {
       this.editedIndex = this.desserts.indexOf(item)
-      this.editUser = Object.assign({}, item)
+      this.editcategorie = Object.assign({}, item)
       this.dialogDelete = true
     },
 
@@ -282,7 +282,7 @@ export default {
     close() {
       this.dialog = false
       this.$nextTick(() => {
-        this.editUser = Object.assign({}, this.defaultUser)
+        this.editcategorie = Object.assign({}, this.defaultcategorie)
         this.editedIndex = -1
       })
     },
@@ -290,16 +290,16 @@ export default {
     closeDelete() {
       this.dialogDelete = false
       this.$nextTick(() => {
-        this.editUser = Object.assign({}, this.defaultUser)
+        this.editcategorie = Object.assign({}, this.defaultcategorie)
         this.editedIndex = -1
       })
     },
 
     save() {
       if (this.editedIndex > -1) {
-        Object.assign(this.desserts[this.editedIndex], this.editUser)
+        Object.assign(this.desserts[this.editedIndex], this.editcategorie)
       } else {
-        this.desserts.push(this.editUser)
+        this.desserts.push(this.editcategorie)
       }
       this.close()
     },
