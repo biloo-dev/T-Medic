@@ -1,6 +1,6 @@
 {
-  "name": "@vuetify-themes/material-dashboard-free",
-  "version": "1.2.0",
+  "name": "t-medic",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
